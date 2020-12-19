@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap');
+
+body {
+	font-family: 'Nunito', Helvetica, sans-serif;
+	font-size: 20px;
+	margin: 0 100px 0 50px;
+}
+
+h4 {
+	font-weight: 700;
+}
+
+p{
+	font-weight: 300;
+}
+
+#tracklist {
+	text-align: left;
+}
