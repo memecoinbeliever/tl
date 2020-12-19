@@ -21,6 +21,13 @@ $('#file').change(async function (e) {
 	document.getElementById('tracklist').innerHTML = htmlFinalTracklistView;
 });
 
+/**
+ * This function will convert second to timestamp.
+ *
+ * @param {number} seconds The start or end second of the song
+ * @return {string} total_string The timestamp that will show up
+ * on the screen.
+ */
 const convertSecondsToTimestamp = (seconds) => {
 	let duration = moment.duration(seconds, 'seconds');
 	let time = '';
@@ -45,6 +52,11 @@ const convertSecondsToTimestamp = (seconds) => {
 	return total_string;
 };
 
+/**
+ * This function will get the title of the song.
+ *
+ * @param {object} song - The metadata of the song.
+ */
 const getSongTitle = (song) => {
 	return new Promise(function (resolve, reject) {
 		let filename = song.name;
@@ -53,6 +65,11 @@ const getSongTitle = (song) => {
 	});
 };
 
+/**
+ * This function will get the length of the song.
+ *
+ * @param {object} song - The metadata of the song.
+ */
 const getSongLength = (song) => {
 	return new Promise(function (resolve, reject) {
 		objectURL = URL.createObjectURL(song);

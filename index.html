@@ -6,8 +6,6 @@
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-			integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" type="text/css" href="stylesheet/tl-style.css" />
 	</head>
@@ -21,7 +19,7 @@
 					<div class="row">
 						<div id="content">
 							<div id="post-content">
-								<h4 class="widgettitle"><strong>How to use:</strong></h4>
+								<h4 class="widget-title"><strong>How to use:</strong></h4>
 								<div>
 									<p>
 										Select multiple audio files, then the tool will read the
@@ -31,12 +29,12 @@
 								</div>
 								<br />
 								<hr />
-								<h4 class="widgettitle"><strong>Input</strong></h4>
+								<h4 class="widget-title"><strong>Input</strong></h4>
 								<input type="file" id="file" multiple="multiple" />
 								<audio id="audio"></audio>
 								<hr />
-								<h4 class="widgettitle"><strong>Output</strong></h4>
-								<p id="tracklist"></p>
+								<h4 class="widget-title"><strong>Output</strong></h4>
+								<p id="tracklist" class="track-list"></p>
 								<hr />
 							</div>
 						</div>
@@ -55,8 +53,8 @@
 			</footer>
 		</div>
 		<!-- script -->
-		<script src="script/jquery.min.js"></script>
-		<script src="script/moment.min.js" defer></script>
-		<script src="script/generator.js"></script>
 	</body>
+	<script src="script/jquery.min.js"></script>
+	<script src="script/moment.min.js" defer></script>
+	<script src="script/generator.js"></script>
 </html>
